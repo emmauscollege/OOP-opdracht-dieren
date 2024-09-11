@@ -12,6 +12,10 @@ console.log("Output van opdracht 3:")
 
 // Basis class: Dier
 class Dier {
+  naam;
+  leeftijd;
+  gewicht;
+
   constructor(naam, leeftijd, gewicht) {
       this.naam = naam;
       this.leeftijd = leeftijd;
@@ -19,11 +23,11 @@ class Dier {
   }
 
   eten() {
-      console.log(`${this.naam} is aan het eten!`);
+      console.log(this.naam + " is aan het eten!");
   }
 
   slapen() {
-      console.log(`${this.naam} slaapt!`);
+      console.log(this.naam + " slaapt!");
   }
 }
 
